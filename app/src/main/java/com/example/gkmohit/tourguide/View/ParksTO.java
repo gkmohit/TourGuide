@@ -15,6 +15,7 @@ import com.example.gkmohit.tourguide.R;
 public class ParksTO extends Fragment {
 
 
+    private View rootView;
     public ParksTO() {
         // Required empty public constructor
     }
@@ -24,7 +25,9 @@ public class ParksTO extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_parks_to, container, false);
+        rootView = inflater.inflate(R.layout.fragment_parks_to, container, false);
+
+        return rootView;
     }
 
 }

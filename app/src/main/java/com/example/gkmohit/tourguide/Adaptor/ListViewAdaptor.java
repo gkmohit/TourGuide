@@ -17,6 +17,11 @@ public class ListViewAdaptor extends BaseAdapter {
     private ArrayList<Object> mItems;
     private Context mContext;
 
+    public ListViewAdaptor(ArrayList<Object> items, Context context) {
+        mItems = items;
+        mContext = context;
+    }
+
     @Override
     public int getCount() {
         return 0;
@@ -24,7 +29,8 @@ public class ListViewAdaptor extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return null;
+
+        return mItems.get(position);
     }
 
     @Override

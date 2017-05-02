@@ -31,5 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Set the tab layout with view pager
         tabLayout.setupWithViewPager(viewPager);
+
     }
 }

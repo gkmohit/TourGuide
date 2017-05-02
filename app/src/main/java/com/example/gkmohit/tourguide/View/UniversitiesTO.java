@@ -12,12 +12,10 @@ import com.example.gkmohit.tourguide.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SportsTO extends Fragment {
+public class UniversitiesTO extends Fragment {
 
 
-    private View rootView;
-
-    public SportsTO() {
+    public UniversitiesTO() {
         // Required empty public constructor
     }
 
@@ -26,9 +24,7 @@ public class SportsTO extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        rootView = inflater.inflate(R.layout.fragment_sports_to, container, false);
-
-        return rootView;
+        return inflater.inflate(R.layout.fragment_universities_to, container, false);
     }
 
 }
