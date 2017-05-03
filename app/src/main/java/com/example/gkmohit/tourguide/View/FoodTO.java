@@ -6,11 +6,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.example.gkmohit.tourguide.Adaptor.ListViewAdaptor;
+import com.example.gkmohit.tourguide.Modal.Resturant;
 import com.example.gkmohit.tourguide.R;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -18,9 +22,10 @@ import java.util.ArrayList;
 public class FoodTO extends Fragment {
 
 
-    private ArrayList<FoodTO> mFoodTOArrayList;
-    private ListViewAdaptor mFoodListViewAdaptor;
+    private ArrayList<Resturant> mFoodTOArrayList;
+    private ArrayList<String> mResturantNameArrayList;
     private View rootView;
+    private ListView mFoodToListView;
     public FoodTO() {
         // Required empty public constructor
         
@@ -33,9 +38,33 @@ public class FoodTO extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         rootView = inflater.inflate(R.layout.fragment_food_to, container, false);
+        initViews();
+        setFoodToList();
 
-
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(rootView.getContext(), android.R.layout.simple_list_item_1, mResturantNameArrayList);
+        mFoodToListView.setAdapter(adapter);
         return rootView;
+    }
+
+    private void initViews(){
+        mFoodToListView = (ListView) rootView.findViewById(R.id.foodListView);
+
+    }
+
+    private void setFoodToList(){
+        mFoodTOArrayList = new ArrayList<>();
+        for(int i = 0; i < Math.random() * 12 + 10; i++){
+
+
+            Resturant resturant = new Resturant("Resturant " + i, "Resturant Address " + i, "1888-123- " + (i * 100), "Resturant Cusine " + i);
+            mFoodTOArrayList.add(resturant);
+        }
+
+        mResturantNameArrayList = new ArrayList<>();
+
+        for( int i = 0; i < mFoodTOArrayList.size(); i++){
+            mResturantNameArrayList.add(mFoodTOArrayList.get(i).getName());
+        }
     }
 
 }

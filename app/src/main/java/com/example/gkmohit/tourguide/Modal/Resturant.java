@@ -51,4 +51,14 @@ public class Resturant {
     public void setCusine(String mCusine) {
         this.mCusine = mCusine;
     }
+
+    @Override
+    public String toString() {
+        return "Resturant{" +
+                "mName='" + mName + '\'' +
+                ", mAddress='" + mAddress + '\'' +
+                ", mPhoneNumber='" + mPhoneNumber + '\'' +
+                ", mCusine='" + mCusine + '\'' +
+                '}';
+    }
 }
