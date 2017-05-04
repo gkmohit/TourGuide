@@ -29,4 +29,14 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
+    <style name="headingTextView">
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="subHeadingTextView">
+        <item name="android:textSize">@dimen/subheading_text_size</item>
+    </style>
+
+
 </resources>

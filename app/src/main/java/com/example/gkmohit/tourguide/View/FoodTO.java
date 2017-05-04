@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.gkmohit.tourguide.Adaptor.FoodTOListViewAdaptor;
 import com.example.gkmohit.tourguide.Adaptor.ListViewAdaptor;
 import com.example.gkmohit.tourguide.Modal.Resturant;
 import com.example.gkmohit.tourguide.R;
@@ -41,8 +42,9 @@ public class FoodTO extends Fragment {
         initViews();
         setFoodToList();
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(rootView.getContext(), android.R.layout.simple_list_item_1, mResturantNameArrayList);
-        mFoodToListView.setAdapter(adapter);
+        FoodTOListViewAdaptor foodTOListViewAdaptor = new FoodTOListViewAdaptor(mFoodTOArrayList, rootView.getContext());
+
+        mFoodToListView.setAdapter(foodTOListViewAdaptor);
         return rootView;
     }
 
@@ -51,9 +53,10 @@ public class FoodTO extends Fragment {
 
     }
 
+
     private void setFoodToList(){
         mFoodTOArrayList = new ArrayList<>();
-        for(int i = 0; i < Math.random() * 12 + 10; i++){
+        for(int i = 0; i < 10 ; i++){
 
 
             Resturant resturant = new Resturant("Resturant " + i, "Resturant Address " + i, "1888-123- " + (i * 100), "Resturant Cusine " + i);
