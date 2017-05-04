@@ -9,14 +9,21 @@ public class Park {
     private String mName;
     private String mAddress;
     private int mEstablishedYear;
+    private String mImageUrl;
 
-    public Park() {
-    }
-
-    public Park(String name, String address, int establishedYear) {
+    public Park(String name, String address, int establishedYear, String imageUrl) {
         mName = name;
         mAddress = address;
         mEstablishedYear = establishedYear;
+        mImageUrl = imageUrl;
+    }
+
+    public String getImageUrl() {
+        return mImageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        mImageUrl = imageUrl;
     }
 
     public String getName() {

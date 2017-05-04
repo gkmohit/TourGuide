@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="heading_text_size">34sp</dimen>
-    <dimen name="subheading_text_size">24sp</dimen>
+    <dimen name="heading_text_size">24sp</dimen>
+    <dimen name="subheading_text_size">15sp</dimen>
     <dimen name="dp_15">15dp</dimen>
+    <dimen name="max_image_dimen">105dp</dimen>
 </resources>
