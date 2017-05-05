@@ -8,21 +8,13 @@ public class Park {
 
     private String mName;
     private String mAddress;
-    private int mEstablishedYear;
+    private String mHours;
     private String mImageUrl;
 
-    public Park(String name, String address, int establishedYear, String imageUrl) {
+    public Park(String name, String address, String hours, String imageUrl) {
         mName = name;
         mAddress = address;
-        mEstablishedYear = establishedYear;
-        mImageUrl = imageUrl;
-    }
-
-    public String getImageUrl() {
-        return mImageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
+        mHours = hours;
         mImageUrl = imageUrl;
     }
 
@@ -30,23 +22,15 @@ public class Park {
         return mName;
     }
 
-    public void setName(String name) {
-        mName = name;
-    }
-
     public String getAddress() {
         return mAddress;
     }
 
-    public void setAddress(String address) {
-        mAddress = address;
+    public String getHours() {
+        return mHours;
     }
 
-    public int getEstablishedYear() {
-        return mEstablishedYear;
-    }
-
-    public void setEstablishedYear(int establishedYear) {
-        mEstablishedYear = establishedYear;
+    public String getImageUrl() {
+        return mImageUrl;
     }
 }

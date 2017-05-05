@@ -9,4 +9,74 @@
     <string name="parks_to">Parks Toronto</string>
     <string name="sports_to">Sports Toronto</string>
     <string name="universities_to">Universities Toronto</string>
+
+
+    <!--Parks of Toronto-->
+    <string name="lavender_creek_trail">Lavender Creek Trail</string>
+    <string name="lavender_creek_hours">Open 9:AM to 9:00 PM</string>
+    <string name="lavender_creek_address">Lavender Creek Trail, Toronto, ON M6N</string>
+
+    <string name="james_garden">James Gardens</string>
+    <string name="james_garden_hours">Open 6:AM to 9:00 PM</string>
+    <string name="james_garden_address">61 Edgehill Rd, Etobicoke, ON M9A 4N1</string>
+
+    <string name="high_park_address">1873 Bloor St W, Toronto, ON M6R 2Z3</string>
+    <string name="high_park_hours">Open 9:AM to 9:00 PM</string>
+    <string name="high_park">High Park</string>
+
+    <string name="earl_bales">Earl Bales Off-leash Dog Park</string>
+    <string name="earl_bales_hours">Open all days.</string>
+    <string name="earl_bales_address">4169 Bathurst St, North York, ON M3H 3P7</string>
+
+    <!--Universities of Toronto-->
+    <string name="uof">University of Toronto</string>
+    <string name="yorku">York University</string>
+    <string name="ryerson_university">Ryerson University</string>
+    <string name="uw">University of Waterloo</string>
+    <string name="uoit">University of Ontario Institute of Technology</string>
+
+    <!--Resturants of Toronto-->
+    <string name="keg">The Keg Mansion</string>
+    <string name="keg_address">515 Jarvis St, Toronto, ON M4Y 2H7</string>
+    <string name="keg_phone_number">(416) 964–6609</string>
+    <string name="keg_cusine">Steak house</string>
+
+    <string name="jack_astors">Jack Astor\'s</string>
+    <string name="jack_astors_address">10 Dundas St E, Toronto, ON M5B 2G9</string>
+    <string name="jack_astors_phone_number">(416) 236–9800</string>
+    <string name="jack_astors_cusine">American</string>
+
+    <string name="paramount">Paramount Fine Foods</string>
+    <string name="paramount_address">253 Yonge St, Toronto, ON M5B 1N8</string>
+    <string name="paramount_phone_number">(416) 366–3600</string>
+    <string name="paramount_cusine">Middle Eastern</string>
+
+    <string name="host">The Host Fine Indian Cuisine</string>
+    <string name="host_address">14 Prince Arthur Ave, Toronto, ON M5R 1A9</string>
+    <string name="host_phone_number">(416) 962–4678</string>
+    <string name="host_cusine">Indian</string>
+
+    <string name="lin_garden">Lin Garden Restaurant</string>
+    <string name="lin_garden_address">1806 Pharmacy Ave, Scarborough, ON M1T 1H6</string>
+    <string name="lin_garden_phone_number">(416) 491–8484</string>
+    <string name="lin_garden_cusine">Hakka Chinese</string>
+
+    <string name="sushi_168">168 Sushi Japan Buffet</string>
+    <string name="sushi_168_address">1520 Steeles Ave W #103, Concord, ON L4K 3B9</string>
+    <string name="sushi_168_phone_number">(905) 760–1680</string>
+    <string name="sushi_168_cusine">Japanese</string>
+
+    <!--Sports Toronto-->
+    <string name="raptors_sport">Basketball</string>
+    <string name="raptors_stadium">Air Canada Centre</string>
+
+    <string name="leafs">Toronto Maple Leafs</string>
+    <string name="leafs_sport">Ice Hockey</string>
+    <string name="leafs_stadium">Air Canada Centre</string>
+
+    <string name="jays">Toronto Blue Jays</string>
+    <string name="jays_sport">Baseball</string>
+    <string name="jays_stadium">The Rogers Centre</string>
+
+
 </resources>

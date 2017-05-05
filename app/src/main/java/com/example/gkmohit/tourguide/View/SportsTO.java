@@ -53,6 +53,7 @@ public class SportsTO extends Fragment {
         Sport s2 = new Sport("Toronto Maple Leafs", "Ice Hockey", "Air Canada Centre");
         Sport s3 = new Sport("Toronto Blue Jays", "Baseball", "The Rogers Centre");
 
+
         mSportsArray.add(s1.getTeamName());
         mSportsArray.add(s2.getTeamName());
         mSportsArray.add(s3.getTeamName());

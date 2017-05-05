@@ -26,6 +26,8 @@ public class FoodTOListViewAdaptor extends ArrayAdapter<Resturant> {
     private static class ViewHolder {
         TextView resturantName;
         TextView resturantAddress;
+        TextView resturantPhoneNumber;
+        TextView resturantCusine;
 
     }
 
@@ -63,6 +65,8 @@ public class FoodTOListViewAdaptor extends ArrayAdapter<Resturant> {
             convertView = inflater.inflate(R.layout.resturant_to_row_item, parent, false);
             viewHolder.resturantName = (TextView) convertView.findViewById(R.id.resturantName);
             viewHolder.resturantAddress = (TextView) convertView.findViewById(R.id.resturantAddress);
+            viewHolder.resturantPhoneNumber = (TextView) convertView.findViewById(R.id.resturantPhoneNumber);
+            viewHolder.resturantCusine = (TextView) convertView.findViewById(R.id.resturantCusine);
 
 
             convertView.setTag(viewHolder);
@@ -74,6 +78,8 @@ public class FoodTOListViewAdaptor extends ArrayAdapter<Resturant> {
 
         viewHolder.resturantName.setText(resturant.getName());
         viewHolder.resturantAddress.setText(resturant.getAddress());
+        viewHolder.resturantPhoneNumber.setText(resturant.getPhoneNumber());
+        viewHolder.resturantCusine.setText(resturant.getCusine());
 
 
         // Return the completed view to render on screen

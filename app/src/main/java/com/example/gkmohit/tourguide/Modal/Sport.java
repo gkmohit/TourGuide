@@ -20,23 +20,11 @@ public class Sport {
         return mTeamName;
     }
 
-    public void setTeamName(String teamName) {
-        mTeamName = teamName;
-    }
-
     public String getSport() {
         return mSport;
     }
 
-    public void setSport(String sport) {
-        mSport = sport;
-    }
-
     public String getStadium() {
         return mStadium;
-    }
-
-    public void setStadium(String stadium) {
-        mStadium = stadium;
     }
 }

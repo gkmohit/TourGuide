@@ -18,15 +18,7 @@ public class University {
         return mName;
     }
 
-    public void setName(String name) {
-        mName = name;
-    }
-
     public int getRank() {
         return rank;
-    }
-
-    public void setRank(int rank) {
-        this.rank = rank;
     }
 }

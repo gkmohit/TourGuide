@@ -23,30 +23,31 @@ import java.util.ArrayList;
 public class ParkTOListViewAdaptor extends ArrayAdapter<Park> {
 
     private Context mContext;
-    private ArrayList<Park> mData;
+    private ArrayList<Park> mParkArrayList;
 
     // View lookup cache
     private static class ViewHolder {
-        TextView objectName;
-        TextView objectAddress;
-        ImageView objectImage;
+        TextView parkName;
+        TextView parkAddress;
+        TextView parkEstablishedYear;
+        ImageView parkImage;
 
     }
     public ParkTOListViewAdaptor(Context context, ArrayList<Park> objects) {
         super(context, R.layout.image_text_row_item, objects);
         this.mContext = context;
-        this.mData = objects;
+        this.mParkArrayList = objects;
     }
 
     @Override
     public int getCount() {
-        return mData.size();
+        return mParkArrayList.size();
     }
 
     @Nullable
     @Override
     public Park getItem(int position) {
-        return mData.get(position);
+        return mParkArrayList.get(position);
     }
 
     @NonNull
@@ -63,9 +64,10 @@ public class ParkTOListViewAdaptor extends ArrayAdapter<Park> {
             viewHolder = new ParkTOListViewAdaptor.ViewHolder();
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.image_text_row_item, parent, false);
-            viewHolder.objectName = (TextView) convertView.findViewById(R.id.parkName);
-            viewHolder.objectAddress = (TextView) convertView.findViewById(R.id.parkAddress);
-            viewHolder.objectImage = (ImageView) convertView.findViewById(R.id.parkImage);
+            viewHolder.parkName = (TextView) convertView.findViewById(R.id.parkName);
+            viewHolder.parkAddress = (TextView) convertView.findViewById(R.id.parkAddress);
+            viewHolder.parkEstablishedYear = (TextView) convertView.findViewById(R.id.parkHours);
+            viewHolder.parkImage = (ImageView) convertView.findViewById(R.id.parkImage);
 
 
             convertView.setTag(viewHolder);
@@ -75,9 +77,10 @@ public class ParkTOListViewAdaptor extends ArrayAdapter<Park> {
         }
 
 
-        viewHolder.objectName.setText(park.getName());
-        viewHolder.objectAddress.setText(park.getAddress());
-        Glide.with(mContext).load(park.getImageUrl()).into(viewHolder.objectImage);
+        viewHolder.parkName.setText(park.getName());
+        viewHolder.parkAddress.setText(park.getAddress());
+        viewHolder.parkEstablishedYear.setText(park.getHours() + "");
+        Glide.with(mContext).load(park.getImageUrl()).into(viewHolder.parkImage);
 
         // Return the completed view to render on screen
         return convertView;

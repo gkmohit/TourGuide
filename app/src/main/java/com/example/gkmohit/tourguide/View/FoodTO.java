@@ -56,18 +56,44 @@ public class FoodTO extends Fragment {
 
     private void setFoodToList(){
         mFoodTOArrayList = new ArrayList<>();
-        for(int i = 0; i < 10 ; i++){
 
+        Resturant keg = new Resturant(rootView.getContext().getString(R.string.keg),
+                rootView.getContext().getString(R.string.keg_address),
+                rootView.getContext().getString(R.string.keg_phone_number),
+                rootView.getContext().getString(R.string.keg_cusine));
 
-            Resturant resturant = new Resturant("Resturant " + i, "Resturant Address " + i, "1888-123- " + (i * 100), "Resturant Cusine " + i);
-            mFoodTOArrayList.add(resturant);
-        }
+        Resturant jackAstors = new Resturant(rootView.getContext().getString(R.string.jack_astors),
+                rootView.getContext().getString(R.string.jack_astors_address),
+                rootView.getContext().getString(R.string.jack_astors_address),
+                rootView.getContext().getString(R.string.jack_astors_cusine));
 
-        mResturantNameArrayList = new ArrayList<>();
+        Resturant paramount = new Resturant(rootView.getContext().getString(R.string.paramount),
+                rootView.getContext().getString(R.string.paramount_address),
+                rootView.getContext().getString(R.string.paramount_phone_number),
+                rootView.getContext().getString(R.string.paramount_cusine));
 
-        for( int i = 0; i < mFoodTOArrayList.size(); i++){
-            mResturantNameArrayList.add(mFoodTOArrayList.get(i).getName());
-        }
+        Resturant linGaraden = new Resturant(rootView.getContext().getString(R.string.lin_garden),
+                rootView.getContext().getString(R.string.lin_garden_address),
+                rootView.getContext().getString(R.string.lin_garden_phone_number),
+                rootView.getContext().getString(R.string.lin_garden_cusine));
+
+        Resturant host = new Resturant(rootView.getContext().getString(R.string.host),
+                rootView.getContext().getString(R.string.host_address),
+                rootView.getContext().getString(R.string.host_phone_number),
+                rootView.getContext().getString(R.string.host_cusine));
+
+        Resturant sushi168 = new Resturant(rootView.getContext().getString(R.string.sushi_168),
+                rootView.getContext().getString(R.string.sushi_168_address),
+                rootView.getContext().getString(R.string.sushi_168_phone_number),
+                rootView.getContext().getString(R.string.sushi_168_cusine));
+
+        mFoodTOArrayList.add(keg);
+        mFoodTOArrayList.add(jackAstors);
+        mFoodTOArrayList.add(paramount);
+        mFoodTOArrayList.add(linGaraden);
+        mFoodTOArrayList.add(host);
+        mFoodTOArrayList.add(sushi168);
+
     }
 
 }

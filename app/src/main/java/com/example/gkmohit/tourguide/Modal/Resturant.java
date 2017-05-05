@@ -10,8 +10,7 @@ public class Resturant {
     private String mAddress;
     private String mPhoneNumber;
     private String mCusine;
-    public Resturant() {
-    }
+
 
     public Resturant(String mName, String mAddress, String mPhoneNumber, String mCusine) {
         this.mName = mName;
@@ -24,32 +23,16 @@ public class Resturant {
         return mName;
     }
 
-    public void setName(String mName) {
-        this.mName = mName;
-    }
-
     public String getAddress() {
         return mAddress;
-    }
-
-    public void setAddress(String mAddress) {
-        this.mAddress = mAddress;
     }
 
     public String getPhoneNumber() {
         return mPhoneNumber;
     }
 
-    public void setPhoneNumber(String mPhoneNumber) {
-        this.mPhoneNumber = mPhoneNumber;
-    }
-
     public String getCusine() {
         return mCusine;
-    }
-
-    public void setCusine(String mCusine) {
-        this.mCusine = mCusine;
     }
 
     @Override
