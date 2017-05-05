@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.gkmohit.tourguide.Modal.Resturant;
@@ -32,7 +31,7 @@ public class FoodTOListViewAdaptor extends ArrayAdapter<Resturant> {
     }
 
     public FoodTOListViewAdaptor(ArrayList<Resturant> resturants, Context context) {
-        super(context, R.layout.resturant_to_row_item, resturants);
+        super(context, R.layout.one_heading_three_subheading_row_item, resturants);
         this.mContext = context;
         this.mResturants = resturants;
 
@@ -62,11 +61,11 @@ public class FoodTOListViewAdaptor extends ArrayAdapter<Resturant> {
 
             viewHolder = new ViewHolder();
             LayoutInflater inflater = LayoutInflater.from(getContext());
-            convertView = inflater.inflate(R.layout.resturant_to_row_item, parent, false);
-            viewHolder.resturantName = (TextView) convertView.findViewById(R.id.resturantName);
-            viewHolder.resturantAddress = (TextView) convertView.findViewById(R.id.resturantAddress);
-            viewHolder.resturantPhoneNumber = (TextView) convertView.findViewById(R.id.resturantPhoneNumber);
-            viewHolder.resturantCusine = (TextView) convertView.findViewById(R.id.resturantCusine);
+            convertView = inflater.inflate(R.layout.one_heading_three_subheading_row_item, parent, false);
+            viewHolder.resturantName = (TextView) convertView.findViewById(R.id.headingText);
+            viewHolder.resturantAddress = (TextView) convertView.findViewById(R.id.subHeadingOne);
+            viewHolder.resturantPhoneNumber = (TextView) convertView.findViewById(R.id.subHeadingTwo);
+            viewHolder.resturantCusine = (TextView) convertView.findViewById(R.id.subHeadingThree);
 
 
             convertView.setTag(viewHolder);

@@ -8,25 +8,25 @@
     >
 
     <TextView
-        android:id="@+id/resturantName"
+        android:id="@+id/headingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/headingTextView"/>
 
     <TextView
-        android:id="@+id/resturantAddress"
+        android:id="@+id/subHeadingOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/subHeadingTextView"/>
 
     <TextView
-        android:id="@+id/resturantPhoneNumber"
+        android:id="@+id/subHeadingTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/subHeadingTextView"
         />
     <TextView
-        android:id="@+id/resturantCusine"
+        android:id="@+id/subHeadingThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/subHeadingTextView"/>

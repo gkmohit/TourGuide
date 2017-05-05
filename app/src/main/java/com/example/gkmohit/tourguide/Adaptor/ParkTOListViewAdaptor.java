@@ -64,10 +64,10 @@ public class ParkTOListViewAdaptor extends ArrayAdapter<Park> {
             viewHolder = new ParkTOListViewAdaptor.ViewHolder();
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.image_text_row_item, parent, false);
-            viewHolder.parkName = (TextView) convertView.findViewById(R.id.parkName);
-            viewHolder.parkAddress = (TextView) convertView.findViewById(R.id.parkAddress);
-            viewHolder.parkEstablishedYear = (TextView) convertView.findViewById(R.id.parkHours);
-            viewHolder.parkImage = (ImageView) convertView.findViewById(R.id.parkImage);
+            viewHolder.parkName = (TextView) convertView.findViewById(R.id.itemHeading);
+            viewHolder.parkAddress = (TextView) convertView.findViewById(R.id.itemSubHeadingOne);
+            viewHolder.parkEstablishedYear = (TextView) convertView.findViewById(R.id.itemSubHeadingTwo);
+            viewHolder.parkImage = (ImageView) convertView.findViewById(R.id.itemImage);
 
 
             convertView.setTag(viewHolder);

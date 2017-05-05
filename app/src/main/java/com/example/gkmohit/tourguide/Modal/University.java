@@ -7,10 +7,14 @@ package com.example.gkmohit.tourguide.Modal;
 public class University {
 
     private String mName;
-    private int rank;
+    private String mMoto;
+    private String mNumberOfStudents;
+    private String rank;
 
-    public University(String name, int rank) {
+    public University(String name, String moto, String numberOfStudents, String rank) {
         mName = name;
+        mMoto = moto;
+        mNumberOfStudents = numberOfStudents;
         this.rank = rank;
     }
 
@@ -18,7 +22,15 @@ public class University {
         return mName;
     }
 
-    public int getRank() {
+    public String getMoto() {
+        return mMoto;
+    }
+
+    public String getNumberOfStudents() {
+        return mNumberOfStudents;
+    }
+
+    public String getRank() {
         return rank;
     }
 }

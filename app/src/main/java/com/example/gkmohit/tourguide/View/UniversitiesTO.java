@@ -6,9 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.gkmohit.tourguide.Adaptor.UniversityTOListViewAdaptor;
 import com.example.gkmohit.tourguide.Modal.University;
 import com.example.gkmohit.tourguide.R;
 
@@ -22,7 +22,7 @@ public class UniversitiesTO extends Fragment {
 
     private View rootView;
     private ListView mUniversityListView;
-    private ArrayList<String> mUniversityNames;
+    private ArrayList<University> mUniversityArrayList;
 
     public UniversitiesTO() {
         // Required empty public constructor
@@ -36,8 +36,9 @@ public class UniversitiesTO extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_universities_to, container, false);
         initViews();
         createUniversities();
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(rootView.getContext(), android.R.layout.simple_list_item_1, mUniversityNames);
-        mUniversityListView.setAdapter(arrayAdapter);
+
+        UniversityTOListViewAdaptor universityTOListViewAdaptor = new UniversityTOListViewAdaptor(mUniversityArrayList, rootView.getContext());
+        mUniversityListView.setAdapter(universityTOListViewAdaptor);
         return rootView;
     }
 
@@ -46,11 +47,37 @@ public class UniversitiesTO extends Fragment {
     }
 
     private void createUniversities(){
-        mUniversityNames = new ArrayList<>();
-        for (int i = 0; i < 7; i++){
-            University university = new University( "University " + (Math.random() * 12 + 1), i);
-            mUniversityNames.add(university.getName());
-        }
+        mUniversityArrayList = new ArrayList<>();
+        University uw = new University(rootView.getContext().getString(R.string.uw),
+                rootView.getContext().getString(R.string.uw_moto),
+                rootView.getContext().getString(R.string.uw_number_of_students),
+                rootView.getContext().getString(R.string.uw_rank));
+
+        University uoft = new University(rootView.getContext().getString(R.string.uoft),
+                rootView.getContext().getString(R.string.uoft_moto),
+                rootView.getContext().getString(R.string.uoft_number_of_students),
+                rootView.getContext().getString(R.string.uoft_rank));
+
+        University yorkU = new University(rootView.getContext().getString(R.string.yorku),
+                rootView.getContext().getString(R.string.yorku_moto),
+                rootView.getContext().getString(R.string.yorku_number_of_students),
+                rootView.getContext().getString(R.string.yorku_rank));
+
+        University ryerson = new University(rootView.getContext().getString(R.string.ryerson_university),
+                rootView.getContext().getString(R.string.ryerson_university_moto),
+                rootView.getContext().getString(R.string.ryerson_university_number_of_students),
+                rootView.getContext().getString(R.string.ryerson_university_rank));
+
+        University uoit = new University(rootView.getContext().getString(R.string.uoit),
+                rootView.getContext().getString(R.string.uoit_moto),
+                rootView.getContext().getString(R.string.uoit_number_of_students),
+                rootView.getContext().getString(R.string.uoit_rank));
+
+        mUniversityArrayList.add(uw);
+        mUniversityArrayList.add(uoft);
+        mUniversityArrayList.add(yorkU);
+        mUniversityArrayList.add(ryerson);
+        mUniversityArrayList.add(uoit);
 
 
     }

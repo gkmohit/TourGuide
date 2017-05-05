@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.gkmohit.tourguide.Adaptor.SportsTOListViewAdaptor;
 import com.example.gkmohit.tourguide.Modal.Sport;
 import com.example.gkmohit.tourguide.R;
 
@@ -23,7 +24,7 @@ public class SportsTO extends Fragment {
 
     private View rootView;
     private ListView mSportsListView;
-    private ArrayList<String> mSportsArray;
+    private ArrayList<Sport> mSportsArray;
 
     public SportsTO() {
         // Required empty public constructor
@@ -37,8 +38,8 @@ public class SportsTO extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_sports_to, container, false);
         initViews();
         createSports();
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(rootView.getContext(), android.R.layout.simple_list_item_1, mSportsArray);
-        mSportsListView.setAdapter(arrayAdapter);
+        SportsTOListViewAdaptor sportsTOListViewAdaptor = new SportsTOListViewAdaptor(rootView.getContext(), mSportsArray);
+        mSportsListView.setAdapter(sportsTOListViewAdaptor);
         return rootView;
     }
 
@@ -49,14 +50,24 @@ public class SportsTO extends Fragment {
     private void createSports(){
 
         mSportsArray = new ArrayList<>();
-        Sport s1 = new Sport("Toronto Raptors", "Basketball", "Air Canada Centre");
-        Sport s2 = new Sport("Toronto Maple Leafs", "Ice Hockey", "Air Canada Centre");
-        Sport s3 = new Sport("Toronto Blue Jays", "Baseball", "The Rogers Centre");
+        Sport s1 = new Sport(rootView.getContext().getString(R.string.raptors),
+                rootView.getContext().getString(R.string.raptors_sport),
+                rootView.getContext().getString(R.string.raptors_stadium),
+                "http://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_500x500/tor.png");
+        Sport s2 = new Sport(rootView.getContext().getString(R.string.jays),
+                rootView.getContext().getString(R.string.jays_sport),
+                rootView.getContext().getString(R.string.jays_stadium),
+                "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Toronto_Blue_Jays_logo.svg/1024px-Toronto_Blue_Jays_logo.svg.png");
 
 
-        mSportsArray.add(s1.getTeamName());
-        mSportsArray.add(s2.getTeamName());
-        mSportsArray.add(s3.getTeamName());
+        Sport s3 = new Sport(rootView.getContext().getString(R.string.leafs),
+                rootView.getContext().getString(R.string.leafs_sport),
+                rootView.getContext().getString(R.string.leafs_stadium),
+                "https://1.bp.blogspot.com/_r8tWGVHrjGI/RnAqzbzZb1I/AAAAAAAAAoo/kRaAPL2EsHU/s200/Leafs_logo_2.png");
+
+        mSportsArray.add(s1);
+        mSportsArray.add(s2);
+        mSportsArray.add(s3);
     }
 
 }

@@ -29,11 +29,32 @@
     <string name="earl_bales_address">4169 Bathurst St, North York, ON M3H 3P7</string>
 
     <!--Universities of Toronto-->
-    <string name="uof">University of Toronto</string>
+    <string name="uoft">University of Toronto</string>
+    <string name="uoft_moto"><b>Motto : </b>Velut arbor ævo</string>
+    <string name="uoft_number_of_students">Enrolled Students  86,709 (2015)</string>
+    <string name="uoft_rank"><b>Rank : </b>2</string>
+
+
     <string name="yorku">York University</string>
+    <string name="yorku_moto"><b>Motto : </b>Tentanda via</string>
+    <string name="yorku_number_of_students">Enrolled Students 53,000 (2014)</string>
+    <string name="yorku_rank"><b>Rank : </b>3</string>
+
     <string name="ryerson_university">Ryerson University</string>
+    <string name="ryerson_university_moto"><b>Motto : </b>Mente et Artificio</string>
+    <string name="ryerson_university_number_of_students">Enrolled Students  36,347 (2015)</string>
+    <string name="ryerson_university_rank"><b>Rank : </b>4</string>
+
     <string name="uw">University of Waterloo</string>
+    <string name="uw_moto"><b>Motto : </b>Concordia cum veritate</string>
+    <string name="uw_number_of_students">Enrolled Students 35,900 (2014)</string>
+    <string name="uw_rank"><b>Rank : </b>1</string>
+
+
     <string name="uoit">University of Ontario Institute of Technology</string>
+    <string name="uoit_moto"><b>Motto : </b>Cogitando et Agendo, Ducemus</string>
+    <string name="uoit_number_of_students">Enrolled Students 20,113 (2015)</string>
+    <string name="uoit_rank"><b>Rank : </b>5</string>
 
     <!--Resturants of Toronto-->
     <string name="keg">The Keg Mansion</string>
@@ -67,6 +88,7 @@
     <string name="sushi_168_cusine">Japanese</string>
 
     <!--Sports Toronto-->
+    <string name="raptors">Toronto Raptors</string>
     <string name="raptors_sport">Basketball</string>
     <string name="raptors_stadium">Air Canada Centre</string>
 

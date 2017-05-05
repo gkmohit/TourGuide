@@ -6,16 +6,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.gkmohit.tourguide.Adaptor.FoodTOListViewAdaptor;
-import com.example.gkmohit.tourguide.Adaptor.ListViewAdaptor;
 import com.example.gkmohit.tourguide.Modal.Resturant;
 import com.example.gkmohit.tourguide.R;
 
 import java.util.ArrayList;
-import java.util.UUID;
 
 /**
  * A simple {@link Fragment} subclass.
